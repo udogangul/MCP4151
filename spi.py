@@ -17,3 +17,4 @@ while True:
         time.sleep(.005)
     for i in range(0x1FF, 0x00, -1):
         write_pot(i)
+        time.sleep(.005)
