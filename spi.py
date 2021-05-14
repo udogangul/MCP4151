@@ -10,11 +10,13 @@ def write_pot(input):
     msb = input >> 8
     lsb = input & 0xFF
     spi.xfer([msb, lsb])
-
-while True:
+    
+    
+write_pot(0x80)
+""" while True:
     for i in range(0x00, 0x1FF, 1):
         write_pot(i)
         time.sleep(.005)
     for i in range(0x1FF, 0x00, -1):
         write_pot(i)
-        time.sleep(.005)
+        time.sleep(.005) """
